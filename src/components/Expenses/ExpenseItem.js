@@ -19,14 +19,16 @@ const ExpenseItem = (props) => {
 
   //STATELESS COMPONENT -> no state, just there to output some data
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={props.date}/>
-      <div className="expense-item__description">
-        <h2>{props.name}</h2>
-        <div className="expense-item__price">${props.amount}</div>
-      </div>
-      {/* <button onClick={changeTitleHandler}>Change Title</button> */}
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={props.date}/>
+        <div className="expense-item__description">
+          <h2>{props.name}</h2>
+          <div className="expense-item__price">${props.amount}</div>
+        </div>
+        {/* <button onClick={changeTitleHandler}>Change Title</button> */}
+      </Card>
+    </li>
   );
 };
 
